@@ -32,6 +32,11 @@
 }
 
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
   background-color: #131313;
   padding: 24px 0px;
 }
@@ -66,6 +71,47 @@
 
 .contacts__phone {
   margin-right: 45px;
+}
+
+.hero {
+  position: relative;
+  background: #131313 url("../image/hero-bg.jpg") no-repeat center/cover;
+  height: 100vh;
+  padding-top: 100px;
+  color: #fff;
+}
+
+.hero__instagram {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 80px;
+  height: 100%;
+}
+
+.instagram {
+  background-color: #131313;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.instagram__link {
+  text-transform: uppercase;
+  color: #E3B873;
+  text-decoration: none;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.title {
+  margin: 0;
 }
 
 body {
